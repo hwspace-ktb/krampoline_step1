@@ -11,7 +11,7 @@ spec:
       labels:
         app: krampoline
     spec:
-	  tolerations:
+      tolerations:
         - key: "node-role.dkosv3.9rum.cc/lb"
           operator: "Equal"
           value: "true"
@@ -24,5 +24,4 @@ spec:
           effect: "NoExecute"
       containers:
         - name: krampoline
-          # 여러분의 image 주소를 입력해주세요.
           image: krmp-d2hub-idock.9rum.cc/dev-test/repo_672806aece0a
