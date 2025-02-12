@@ -11,17 +11,7 @@ spec:
       labels:
         app: krampoline
     spec:
-      tolerations:
-        - key: "node-role.dkosv3.9rum.cc/lb"
-          operator: "Equal"
-          value: "true"
-          effect: "NoSchedule"
-        - key: "node-role.kubernetes.io/master"
-          operator: "Exists"
-          effect: "NoSchedule"
-        - key: "node.kubernetes.io/unreachable"
-          operator: "Exists"
-          effect: "NoExecute"
       containers:
         - name: krampoline
-          image: krmp-d2hub-idock.9rum.cc/dev-test/repo_672806aece0a
+          # 여러분의 image 주소를 입력해주세요.
+          image: krmp-d2hub-idock.9rum.cc/dev-test/repo_70dcac46ebf9
