@@ -22,7 +22,7 @@ spec:
 			- key: "node.kubernetes.io/unreachable"
 			  operator: "Exists"
 			  effect: "NoExecute"
-		  containers:
+		containers:
 			- name: krampoline
 			  # 여러분의 image 주소를 입력해주세요.
 			  image: krmp-d2hub-idock.9rum.cc/dev-test/repo_672806aece0a
